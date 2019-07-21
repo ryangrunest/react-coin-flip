@@ -1,0 +1,21 @@
+.CoinFlip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.CoinFlip-header {
+  width: 100%;
+  text-align: center;
+}
+.CoinFlip-img-container {
+  text-align: center;
+  width: 100vw;
+
+}
+.CoinFlip-img {
+  width: 400px;
+  height: auto;
+}
