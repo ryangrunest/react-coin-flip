@@ -9,13 +9,53 @@
 .CoinFlip-header {
   width: 100%;
   text-align: center;
+  margin: 2vh;
 }
+.CoinFlip-raise {
+  transition: 0.3s all;
+}
+.CoinFlip-raise:hover {
+  margin-bottom: 100vh;
+}
+
 .CoinFlip-img-container {
   text-align: center;
   width: 100vw;
-
 }
 .CoinFlip-img {
   width: 400px;
   height: auto;
+}
+.CoinFlip-btn {
+  margin: 0 38vw;
+  padding: 2vw;
+  font-size: 2rem;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  background: rgb(69, 156, 214);
+  color: white;
+  transition: 0.2s linear;
+}
+.CoinFlip-btn:hover {
+  box-shadow: 2px 2px 10px rgba(26, 26, 26, 0.295);
+  cursor: pointer;
+  animation: wiggle 1.0s ease-in-out;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg)
+  }
+  25% {
+    transform: rotate(20deg)
+  }
+  50% {
+    transform: rotate(0deg)
+  }
+  75% {
+    transform: rotate(-20deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
 }

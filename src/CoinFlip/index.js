@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './CoinFlip.css';
+import Coin from '../Coin';
 
 class CoinFlip extends Component {
 
@@ -30,10 +31,8 @@ class CoinFlip extends Component {
   render() {
     return(
       <div className="CoinFlip">
-        <h1 className="CoinFlip-header">React Coin Flip</h1>
-        <div className="CoinFlip-img-container">
-          <img className="CoinFlip-img" src={this.state.imgUrl}></img>
-        </div>
+        <h1 className="CoinFlip-header"><span className="CoinFlip-raise">React </span><span className="CoinFlip-raise">Coin </span><span className="CoinFlip-raise">Flip</span></h1>
+        <Coin imgUrl={this.state.imgUrl}/>
         <button className="CoinFlip-btn" onClick={() => this.onClick()}>Flip Coin</button>
         <h5 className="CoinFlip-counter">Out of {this.state.numHeads + this.state.numTails} flips, there have been {this.state.numHeads} heads and {this.state.numTails} tails.</h5>
       </div>
